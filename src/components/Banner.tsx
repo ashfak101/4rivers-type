@@ -1,5 +1,6 @@
 import { Box, Typography } from '@mui/material'
 import React from 'react'
+import Navbar from './shared/Navbar';
 
 const bannerBg = {
     background: `url('/assets/images/banner.png')`,
@@ -13,7 +14,7 @@ const Banner = () => {
 
   return (
     <Box style={bannerBg}>
-       
+       <Navbar/>
     </Box>
   )
 }

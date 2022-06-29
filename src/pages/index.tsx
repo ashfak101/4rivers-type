@@ -1,6 +1,8 @@
 import { Box, Typography } from '@mui/material'
 import Banner from 'components/Banner'
+import Browse from 'components/Browse'
 import DealerNetwork from 'components/DealerNetwork'
+import TractorBuying from 'components/TractorBuying'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
@@ -17,6 +19,8 @@ const Home: NextPage = () => {
       <Typography sx={{textAlign:'center',color:'#333',fontSize:'12px',background:'#84D0F4',fontWeight:'700',py:1}}>A trusted seller  |  Equipment in stock and ready to work  <Box component='span' sx={{textDecoration:'underline'}}>View all</Box></Typography>
       <Banner/>
       <DealerNetwork/>
+      <Browse/>
+      <TractorBuying/>
      
     </div>
   )

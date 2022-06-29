@@ -10,9 +10,10 @@ const Styles = {
         fontSize: '18px',
         fontFamily: 'Bebas Neue',
         color: '#fff',
+        cursor:'pointer',
         margin: '0 20px',
         '&:hover': {
-            color: '#333'
+            color: 'info.main'
         }
     }
 }

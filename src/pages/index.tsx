@@ -2,6 +2,7 @@ import { Box, Typography } from '@mui/material'
 import AboutUs from 'components/AboutUs'
 import Banner from 'components/Banner'
 import Browse from 'components/Browse'
+import Career from 'components/Career'
 import Careers from 'components/Careers'
 import DealerNetwork from 'components/DealerNetwork'
 import Process from 'components/Process'
@@ -33,6 +34,7 @@ const Home: NextPage = () => {
       <AboutUs/>
       <Testimonials/>
       <Careers/>
+      <Career/>
      
     </div>
   )

@@ -10,10 +10,24 @@ a {
   color: inherit;
   text-decoration: none;
 }
-h4,h1,h2,h3,h5 {
+h4,h1,h2,h3,h5,h6 {
   font-weight: 700;
   font-family: Bebas Neue, sans-serif !important;
 }
+p{
+  font-size: 15px;
+  font-family: Heebo;
+  margin-top: 10px;
+}
 * {
   box-sizing: border-box;
+}
+.slick-prev {
+  display: none !important;
+}
+.slick-next {
+  display: none !important;
+}
+.slick-slide  {
+  margin-right: 0px !important;
 }

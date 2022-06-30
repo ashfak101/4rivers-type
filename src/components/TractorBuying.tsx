@@ -23,15 +23,15 @@ const TractorBuying = () => {
                 <Box sx={{ display: 'flex' ,flexDirection:{
                     xs:'column',md:'row',justifyContent:'center',alignItems:'center'
                 }}}>
-                    <Box color='primary' sx={{ maxWidth: '276.83px',mr:4 }}>
+                    <Box color='primary' sx={{ maxWidth: '276.83px',mr:4 ,mt:{xs:2,md:0}}}>
                         <Typography variant='h5' color='primary'>FEATURE HERE</Typography>
                         <Typography color='primary.light' sx={{ fontSize: '15px', fontFamily: 'Heebo', fontWeight: '400', lineHeight: '20px', mt: '20px' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Typography>
                     </Box>
-                    <Box sx={{ maxWidth: '276.83px',mr:4 }}>
+                    <Box sx={{ maxWidth: '276.83px',mr:4 ,mt:{xs:2,md:0}}}>
                         <Typography variant='h5' color='primary'>FEATURE HERE</Typography>
                         <Typography color='primary.light' sx={{ fontSize: '15px', fontFamily: 'Heebo', fontWeight: '400', lineHeight: '20px', mt: '20px' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Typography>
                     </Box>
-                    <Box sx={{ maxWidth: '276.83px' }}>
+                    <Box sx={{ maxWidth: '276.83px' ,mr:4,mt:{xs:2,md:0}}}>
                         <Typography variant='h5' color='primary'>FEATURE HERE</Typography>
                         <Typography color='primary.light' sx={{ fontSize: '15px', fontFamily: 'Heebo', fontWeight: '400', lineHeight: '20px', mt: '20px' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Typography>
                     </Box>

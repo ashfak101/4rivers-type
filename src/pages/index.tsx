@@ -1,8 +1,13 @@
 import { Box, Typography } from '@mui/material'
+import AboutUs from 'components/AboutUs'
 import Banner from 'components/Banner'
 import Browse from 'components/Browse'
+import Careers from 'components/Careers'
 import DealerNetwork from 'components/DealerNetwork'
 import Process from 'components/Process'
+import Research from 'components/Research'
+import SupportingServices from 'components/SupportingServices'
+import Testimonials from 'components/Testimonials'
 import TractorBuying from 'components/TractorBuying'
 import type { NextPage } from 'next'
 import Head from 'next/head'
@@ -23,6 +28,11 @@ const Home: NextPage = () => {
       <Browse/>
       <TractorBuying/>
       <Process/>
+      <Research/>
+      <SupportingServices/>
+      <AboutUs/>
+      <Testimonials/>
+      <Careers/>
      
     </div>
   )

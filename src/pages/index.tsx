@@ -5,8 +5,10 @@ import Browse from 'components/Browse'
 import Career from 'components/Career'
 import Careers from 'components/Careers'
 import DealerNetwork from 'components/DealerNetwork'
+import Latest from 'components/Latest'
 import Process from 'components/Process'
 import Research from 'components/Research'
+import Footer from 'components/shared/Footer'
 import SupportingServices from 'components/SupportingServices'
 import Testimonials from 'components/Testimonials'
 import TractorBuying from 'components/TractorBuying'
@@ -35,6 +37,8 @@ const Home: NextPage = () => {
       <Testimonials/>
       <Careers/>
       <Career/>
+      <Latest/>
+      <Footer/>
      
     </div>
   )

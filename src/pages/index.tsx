@@ -2,11 +2,12 @@ import { Box, Typography } from '@mui/material'
 import Banner from 'components/Banner'
 import Browse from 'components/Browse'
 import DealerNetwork from 'components/DealerNetwork'
+import Process from 'components/Process'
 import TractorBuying from 'components/TractorBuying'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.scss'
 
 const Home: NextPage = () => {
   return (
@@ -21,6 +22,7 @@ const Home: NextPage = () => {
       <DealerNetwork/>
       <Browse/>
       <TractorBuying/>
+      <Process/>
      
     </div>
   )

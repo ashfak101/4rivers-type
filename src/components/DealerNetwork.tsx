@@ -12,7 +12,7 @@ const DealerNetwork = () => {
                     <Grid item xs={12} md={6} lg={4} >
                         <Box sx={{ m: 1, p: 2, boxShadow: ' 0px 8px 35px rgba(0, 0, 0, 0.0991348)', background: '#FFFFFF', borderRadius: '10px', minHeight: '370px' }}>
                             <Typography variant='h5' sx={{ mb: 2 }}>OUR DEALER NETWORK <Box component='span' sx={{ fontSize: '14px', textDecoration: 'underline', ml: 10, fontWeight: '300', }}>View Locations</Box></Typography>
-                            <Image width=' 355px' height='305.27px' src='/assets/images/mm.png' alt='' />
+                            <Image width=' 355px' height='305.27px' src='/assets/images/mm.png' alt='' layout="responsive"/>
                         </Box>
                     </Grid>
                     <Grid item xs={12} md={6} lg={4} >

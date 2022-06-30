@@ -122,7 +122,7 @@ const Browse = () => {
         speed: 500,
         
         slidesToShow:count,
-        slidesToScroll: 1,
+        slidesToScroll: 4,
         initialSlide: 1,
         responsive: [
             {

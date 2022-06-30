@@ -85,15 +85,15 @@ const Footer = () => {
                         <Typography color='primary.light'>&copy;Copyright 2022 All Right Reserved 4Riverts Equipment </Typography>
                     </Box>
                 </Box>
-                <Box sx={{display:'flex',justifyContent:'space-between',flexWrap:'wrap',px:10,py:5,flexDirection:{xs:'column',md:'row'}}}>
-                <Box sx={{ mt: 1,display:'flex' }}>
+                <Box sx={{display:'flex',justifyContent:'space-between',flexWrap:'wrap',px:{xs:0,md:10},py:5,flexDirection:{xs:'column',md:'row'}}}>
+                <Box sx={{ mt: 1,display:'flex',flexDirection:{xs:'column',md:'row'} }}>
                                 <Typography sx={{ color:'#fff',mr:2,fontSize:'14px' }}>PRIVACY POLICY</Typography>
                                 <Typography sx={{ color: '#fff',fontSize:'14px',mr:2 }}>COOKIE POLICY</Typography>
                                 <Typography sx={{ color: '#fff',fontSize:'14px',mr:2 }}>TERMS & CONDITIONSr</Typography>
                                 <Typography sx={{ color: '#fff',fontSize:'14px' ,mr:2}}>SITE MAP</Typography>
                                
                             </Box>
-                            <Box sx={{ mt: 1,display:'flex',justifyContent:'flex-end',color:'#fff' }}>
+                            <Box sx={{ mt: 1,display:'flex',justifyContent:'flex-end',color:'#fff' ,}}>
                                 <Typography   sx={{mr:2}}>FOLLOW US</Typography>
                                 <FacebookIcon  sx={{mr:2}}/>
                                 <TwitterIcon  sx={{mr:2}}/>

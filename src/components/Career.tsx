@@ -11,7 +11,7 @@ const Career = () => {
                     <Grid item xs={12} md={6} sx={{ position: 'relative' }}>
                         <Image width='626px' height='500px' src='/assets/images/career.png' alt='' layout="responsive" />
                         <Box sx={{
-                            width: '110px', height: '110px', background: '#FFFFFF', position: 'absolute', borderRadius: '50%',
+                            width: {xs:'80px',md:'110px'}, height: {xs:'80px',md:'110px'}, background: '#FFFFFF', position: 'absolute', borderRadius: '50%',
                             top: "50%",
                             left: "50%",transition:'all 0.5s ease',
                             transform: 'translate(-50%, -50%)',cursor:'pointer','&:hover':{

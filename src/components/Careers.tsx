@@ -20,7 +20,7 @@ const Careers = () => {
       <Container>
       <Box sx={{py:20}}>
         <Typography color='info.main' variant='h5'>CAREERS</Typography>
-        <Typography color='primary.main'  variant='h3' sx={{maxWidth:'369px',fontSize:'82px',my:4}}>A PLACE OF Integrity</Typography>
+        <Typography color='primary.main'  variant='h3' sx={{maxWidth:'369px',fontSize:'82px',my:4}}>A PLACE OF <Box component='span' sx={{color:'#96D3F4'}}>Integrity</Box></Typography>
         <Typography color='primary.light' sx={{maxWidth:'369px',fontSize:'15px',lineHeight: '25px'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porta mauris at finibus mattis. Nulla facilisi. Pellentesque ac tellus nulla. Nulla facilisi. Sed viverra commodo erat, ut laoreet tellus hendrerit vitae.</Typography>
       </Box>
       </Container>

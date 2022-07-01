@@ -8,6 +8,7 @@ import NearMeIcon from '@mui/icons-material/NearMe';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import CircleIcon from '@mui/icons-material/Circle';
 const Styles = {
     prev: {
         position: 'relative',
@@ -39,14 +40,27 @@ const Styles = {
     },
 
 }
-const browse = [
+interface IBrowse{
+  id:string,
+  name:string,
+  image:string,
+  loader:string,
+  price:string,
+  date:string,
+  km:string,
+  stock:string,
+  time:string
+}
+const browse:IBrowse[] = [
     {
         id: '1',
         name: 'JOHN DEERE',
         image: 'assets/images/browse-img.png',
         loader: '1023+LOADER',
         price: '$26,800',
-        time: '27', date: '2021', km: '27',
+        time: '27', 
+        date: '2021', 
+        km: '27',
         stock: 'AVAILABLE NOW'
     },
     {
@@ -123,7 +137,7 @@ const Browse = () => {
         
         slidesToShow:count,
         slidesToScroll: 4,
-        initialSlide: 1,
+        initialSlide: 0,
         responsive: [
             {
                 breakpoint: 1024,
@@ -174,14 +188,17 @@ const Browse = () => {
                 <Box sx={{mt:'15px'}}>
                 <Slider ref={silder} {...settings}>
                     {
-                        browse.map(element =>
-                            <Card key={element.id} sx={{ maxWidth: {xs:'383px',md:'270px'},background: '#FFFFFF',boxShadow: '0px 26px 35px rgba(0, 0, 0, 0.0680999)' ,borderRadius:'0px',mr:12}}>
+                        browse.map((element:IBrowse) =>
+                            <Card key={element.id} sx={{ maxWidth: {xs:'383px',md:'270px'},background: '#FFFFFF',boxShadow: '0px 26px 35px rgba(0, 0, 0, 0.0680999)' ,borderRadius:'0px',mr:12,position:'relative'}}>
                                 <CardMedia
                                     component="img"
 
                                     image={element.image}
                                     alt="green iguana"
+                                    
+                    
                                 />
+                                <Button sx={{position:'absolute',left:'5%',top:'5%',background: '#101822',fontSize:'13px',borderRadius:'7px','&:hover':{background: '#101822'}}}> <Box sx={{width:'5px',height:'5px',background:element.stock == 'PRE-ORDER'? '#D8993D':'#3AA046',borderRadius:'50%',mr:'5px'}}/>  {element.stock}</Button>
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="div" sx={{ fontFamily: 'Bebas Neue', fontSize: '13px' }}>
                                         {element.name}

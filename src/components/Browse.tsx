@@ -118,7 +118,7 @@ const Browse = () => {
     
     let settings = {
         dots: false,
-        
+        padding: "60px",
         speed: 500,
         
         slidesToShow:count,
@@ -156,7 +156,7 @@ const Browse = () => {
                 <Box sx={{ display: 'flex', justifyContent: 'space-between', flexDirection: { xs: 'column', md: 'row' } }}>
                     <Typography variant='h4'>Browse <Box component='span' sx={{ fontSize: '24px' }}>[23]</Box></Typography>
                     <Box><BrowseTabs  setCount={setCount}/></Box>
-                    <Box>
+                    <Box sx={{display:{xs:'flex',md:'block'}}}>
                         <PrimaryBtn text={'View all'} />
                         <Box sx={Styles.prev} component='span'   onClick={() => silder?.current?.slickPrev()}> <ArrowBackIcon sx={{
                             fontSize: '16px', '&:hover': {

@@ -11,7 +11,7 @@ const Styles = {
         color:'secondary.main',
         fontFamily: "Bebas Neue",
         fontWeight: '700',
-        padding: '10px 35px',
+        padding: {xs:'8px 25px',md:'10px 35px',},
         zIndex: 10,
         border: '1px solid #091C30',
         borderRadius: '50px',

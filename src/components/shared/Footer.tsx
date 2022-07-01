@@ -77,7 +77,7 @@ const Footer = () => {
                                 <Typography variant='h5' sx={{color:'#979797',mb:2}}>CORPORATE OFFICE</Typography>
                                 <Typography color='primary.main'>927 11th Street Greeley,</Typography>
                             </Box>
-                            <Box sx={{textAlign:'right'}}>
+                            <Box sx={{textAlign:{xs:'left',md:'right'}}}>
                                 <Typography variant='h5' sx={{color:'#979797',mb:2}}>DIRECT EMAIL</Typography>
                                 <Typography color='primary.light'>INFO@4RIVERSEQUIPMENTS,</Typography>
                             </Box>

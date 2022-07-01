@@ -55,3 +55,10 @@
 }
    
 }
+.process{
+    transform: scaleY(1);
+    transition: all 0.5s ease-in-out;
+    &:hover{
+        transform: scaleY(1.03);   transition: all 0.5s ease-in-out;
+    }
+}

@@ -12,7 +12,7 @@ const Styles = {
         color: 'primary.main',
         fontFamily: "Bebas Neue",
         fontWeight: '700',
-        padding: '10px 35px',
+        padding: {xs:'8px 25px',md:'10px 35px',},
         zIndex: 10,
         border: '1px solid #fff',
         borderRadius: '50px',

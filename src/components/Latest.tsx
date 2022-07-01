@@ -3,6 +3,8 @@ import Image from 'next/image'
 import React from 'react'
 import PrimaryBtn from './shared/PrimaryBtn'
 
+
+// boxShadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px
 const Latest = () => {
   const category=[
     {
@@ -50,7 +52,7 @@ const Latest = () => {
                   <Box key={element.id} >
                     <Box sx={{display:'flex',mb:'20px'}}>
                       <Image width='139.24px' height='92.06px' src={element.image} alt=''/>
-                      <Box sx={{ml:'20px'}}>
+                      <Box sx={{ml:'20px','&:hover':{}}}>
                          <Button sx={{background:'#091C30',borderRadius:'0',px:'20px',mb:'10px',fontSize:'14px','&:hover':{
                           background:'#F5C801'
                          }}}>Category</Button>

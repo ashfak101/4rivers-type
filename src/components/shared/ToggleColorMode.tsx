@@ -3,7 +3,7 @@ import React from 'react'
 
 export const ColorModeContext = React.createContext({ toggleColorMode: () => { } });
 const ToggleColorMode = ( {children}:any) => {
-    const [mode, setMode] = React.useState<'light' | 'dark'>('dark');
+    const [mode, setMode] = React.useState<'light' | 'dark'>('light');
     const colorMode = React.useMemo(
         () => ({
             toggleColorMode: () => {

@@ -1,4 +1,4 @@
-import { Box, Button, Container, Grid, Typography } from '@mui/material'
+import { Box, Button, Container, Grid, Typography, useTheme } from '@mui/material'
 import Image from 'next/image'
 import React from 'react'
 import PrimaryBtn from './shared/PrimaryBtn'
@@ -20,13 +20,14 @@ const Latest = () => {
       id:'4',image:'/assets/images/latest-img-2.png',title:'ARTICLE TITLE GOES HERE'
     },
   ]
+  const theme = useTheme();
   return (
-    <Box sx={{ background: '#F2F2F2', py: '10px' }}>
+    <Box sx={{ background:theme.palette.mode === 'dark'?'#333': '#F2F2F2', py: '10px' }}>
       <Container>
         <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', mt: '100px', flexDirection: { xs: 'column', md: 'row' } }}>
           <Box>
 
-            <Typography variant='h4' sx={{ maxWidth: '476px' }} color='secondary'>LATEST FROM 4RIVERS</Typography>
+            <Typography variant='h4' sx={{ maxWidth: '476px' }}>LATEST FROM 4RIVERS</Typography>
           </Box>
           <Box sx={{ alignContent: 'flex-end' }}>
             <PrimaryBtn text='VIEW ALL' />
@@ -38,9 +39,9 @@ const Latest = () => {
               <Box sx={{position:'relative'}}>
                 <Image width='687.17px'
                   height='458px'layout="responsive"  src='/assets/images/latest.png' alt='' />
-                  <Typography sx={{fontFamily:'Bebas Neue',fontSize:'15px',lineHeight:'36px'}} color='secondary'>MAR 11TH 2022</Typography>
-                  <Typography sx={{fontFamily:'Bebas Neue',fontSize:'36px',lineHeight:'36px',my:'10px'}} color='secondary'>Colorado Eagles Hockey | Agriculture Night</Typography>
-                  <Typography sx={{fontFamily:'Heebo',fontSize:'15px',lineHeight:'20px'}} color='secondary'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean rhoncus, nisi ultricies malesuada ultricies,</Typography>
+                  <Typography sx={{fontFamily:'Bebas Neue',fontSize:'15px',lineHeight:'36px'}}>MAR 11TH 2022</Typography>
+                  <Typography sx={{fontFamily:'Bebas Neue',fontSize:'36px',lineHeight:'36px',my:'10px'}}>Colorado Eagles Hockey | Agriculture Night</Typography>
+                  <Typography sx={{fontFamily:'Heebo',fontSize:'15px',lineHeight:'20px'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean rhoncus, nisi ultricies malesuada ultricies,</Typography>
                   <Box sx={{position:'absolute',top:'20px' ,left:'20px'}}><Button sx={{background:'#091C30',borderRadius:'0',px:'20px',mb:'10px',fontSize:'14px','&:hover':{
                           background:'#F5C801'
                          }}}>Category</Button></Box>
@@ -53,10 +54,10 @@ const Latest = () => {
                     <Box sx={{display:'flex',mb:'20px'}}>
                       <Image width='139.24px' height='92.06px' src={element.image} alt=''/>
                       <Box sx={{ml:'20px','&:hover':{}}}>
-                         <Button sx={{backgroundColor:'warning.main',borderRadius:'0',px:'20px',mb:'10px',fontSize:'14px','&:hover':{
+                         <Button sx={{background:'#091C30',borderRadius:'0',px:'20px',mb:'10px',fontSize:'14px','&:hover':{
                           background:'#F5C801'
                          }}}>Category</Button>
-                         <Typography variant='h6' color='secondary'>{element.title}</Typography>
+                         <Typography variant='h6'>{element.title}</Typography>
                       </Box>
                     </Box>
                   </Box>

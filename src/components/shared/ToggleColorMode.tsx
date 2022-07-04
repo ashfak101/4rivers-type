@@ -20,7 +20,8 @@ const ToggleColorMode = ( {children}:any) => {
                     mode,
                     primary:{
                         main:'#FFFFFF',
-                        light:'#CECECE'
+                        light:'#CECECE',
+                        dark:'#F2F2F2'
                     },
                     secondary:{
                         main:'#111111'
@@ -32,7 +33,8 @@ const ToggleColorMode = ( {children}:any) => {
                     info:{
                         main:'#F5C801'
                     }
-                    ,  
+                    ,
+                     
                 },
                 typography:{
                     h3:{

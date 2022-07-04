@@ -1,4 +1,4 @@
-import { Box, CardMedia, Container, Grid, Typography } from '@mui/material'
+import { Box, CardMedia, Container, Grid, Typography, useTheme } from '@mui/material'
 import Image from 'next/image'
 import React from 'react'
 import PrimaryBtn from './shared/PrimaryBtn'
@@ -14,11 +14,12 @@ const Process = () => {
         { id: 3, title: '30 DAYS WORRY-FREE', image: '/assets/images/process/scott-goodwill.png', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
         { id: 4, title: '10 YEAR WARRANTY', image: '/assets/images/process/dan-loran.png', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' }
     ]
+    const theme = useTheme();
     return (
         <Box sx={{
             pb: 10, position: 'relative', '&:before': {
                 content: '""',
-                position: 'absolute', width: "35%", height: '100%', background: '#F2F2F2', right: 0
+                position: 'absolute', width: "35%", height: '100%', background:theme.palette.mode === 'dark'?'#333': '#F2F2F2', right: 0
             }
         }}>
 

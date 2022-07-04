@@ -7,7 +7,8 @@ const Styles = {
     btn: {
         position: 'relative',
         fontSize: '18px',
-        background: 'transparent',
+        // background: 'transparent',
+        backgroundColor:'primary.main',
         color:'secondary.main',
         fontFamily: "Bebas Neue",
         fontWeight: '700',
@@ -33,7 +34,7 @@ const Styles = {
             transform: 'scaleX(0)',
             // transformOrigin: 'left',
             transition: 'transform 0.5s ease-in-out',
-            background: "#091C30",
+            backgroundColor: "warning.main",
         },
         '&:hover::before':{
             transform: 'scaleX(1)'

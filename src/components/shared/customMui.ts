@@ -1,7 +1,11 @@
 import { createTheme } from "@mui/material";
+import React from "react";
+
+
 
 export const theme = createTheme({
     palette:{
+        
         primary:{
             main:'#FFFFFF',
             light:'#CECECE'
@@ -33,3 +37,17 @@ export const theme = createTheme({
         }
     }
 })
+
+export default function ToggleColorMode(){
+    const [mode, setMode] = React.useState<'light' | 'dark'>('light');
+    const colorMode = React.useMemo(
+      () => ({
+        toggleColorMode: () => {
+          setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
+        },
+      }),
+      [],
+    );
+
+    
+}

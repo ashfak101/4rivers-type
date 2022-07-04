@@ -1,4 +1,4 @@
-import { Box, Container, Typography } from '@mui/material';
+import { Box, Container, Paper, Typography } from '@mui/material';
 import React from 'react'
 
 const Careers = () => {
@@ -9,14 +9,16 @@ const Careers = () => {
     backgroundRepeat: "no-repeat",
    
     height: "770px",
-    PointerEvent:'all',
+   
    
   };
   return (
-    <Box style={careerBg} sx={{position:'relative',zIndex:'-1',my:10,'&:before':{
-      content:'""',
-      position:'absolute',left:0,right:0,top:0,bottom:0,background:' linear-gradient(-15deg, rgba(46, 46, 46, 0.0001) 0%, #151515 100%)',zIndex:'-1'
-    }}}>
+  <Paper  style={careerBg} sx={{position:'relative',zIndex:'1',my:10,'&:before':{
+    content:'""',
+    position:'absolute',left:0,right:0,top:0,bottom:0,
+    background:' linear-gradient(-15deg, rgba(46, 46, 46, 0.0001) 0%, #151515 100%)',zIndex:'-1'
+  }}}>
+      <Box >
       <Container>
       <Box sx={{py:20}}>
         <Typography color='info.main' variant='h5'>CAREERS</Typography>
@@ -25,6 +27,7 @@ const Careers = () => {
       </Box>
       </Container>
     </Box>
+  </Paper>
   )
 }
 

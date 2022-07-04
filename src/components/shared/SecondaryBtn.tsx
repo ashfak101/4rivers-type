@@ -34,7 +34,7 @@ const Styles = {
             transform: 'scaleX(0)',
             // transformOrigin: 'left',
             transition: 'transform 0.5s ease-in-out',
-            background: "#fff",
+            backgroundColor: "primary.main",
         },
         '&:hover::before':{
             transform: 'scaleX(1)'

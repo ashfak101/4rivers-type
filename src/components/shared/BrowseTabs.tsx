@@ -14,7 +14,7 @@ const BrowseTabs = ({setCount}:any) => {
                 variant="scrollable"
                 scrollButtons="auto"
                 onChange={handleChange}
-                textColor="secondary"
+                textColor="inherit"
                 indicatorColor="secondary"
                 sx={{'& .MuiTab-root':{
                     fontSize:'18px',
@@ -23,7 +23,7 @@ const BrowseTabs = ({setCount}:any) => {
                     mx:1,
                     flexWrap:'wrap'
                     // flexDirection:{xs:'column'}
-                }}}
+                },'& .Mui-selected':{color:"secondary.light"}}}
                 aria-label="scrollable auto tabs example"
             >
                 <Tab value="one" label="TRACTORS" onClick={()=>setCount(4)}/>

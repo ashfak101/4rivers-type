@@ -189,7 +189,7 @@ const Browse = () => {
                 <Slider ref={silder} {...settings}>
                     {
                         browse.map((element:IBrowse) =>
-                            <Card key={element.id} sx={{ maxWidth: {xs:'383px',md:'270px'},background: '#FFFFFF',boxShadow: '0px 26px 35px rgba(0, 0, 0, 0.0680999)' ,borderRadius:'0px',mr:12,position:'relative'}}>
+                            <Card key={element.id} sx={{ maxWidth: {xs:'383px',md:'270px'},background: 'primary.main',boxShadow: '0px 26px 35px rgba(0, 0, 0, 0.0680999)' ,borderRadius:'0px',mr:12,position:'relative',border:'1px solid #F2F2F2'}}>
                                 <CardMedia
                                     component="img"
 

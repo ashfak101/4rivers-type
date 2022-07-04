@@ -1,4 +1,4 @@
-import { Box, Button, Container, Grid, Typography } from '@mui/material'
+import { Box, Button, Container, Grid, Typography, useTheme } from '@mui/material'
 import Image from 'next/image'
 import React from 'react'
 import PrimaryBtn from './shared/PrimaryBtn'
@@ -20,8 +20,9 @@ const Latest = () => {
       id:'4',image:'/assets/images/latest-img-2.png',title:'ARTICLE TITLE GOES HERE'
     },
   ]
+  const theme = useTheme();
   return (
-    <Box sx={{ background: '#F2F2F2', py: '10px' }}>
+    <Box sx={{ background:theme.palette.mode === 'dark'?'#333': '#F2F2F2', py: '10px' }}>
       <Container>
         <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', mt: '100px', flexDirection: { xs: 'column', md: 'row' } }}>
           <Box>
